@@ -51,7 +51,7 @@ float volume(int height,int side)
  return vol;
 }
 
-float volum(float volum){
+float cube(float volum){
 
 }
 
