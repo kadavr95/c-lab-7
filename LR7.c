@@ -8,7 +8,7 @@ float cube(float volum);
 int main(void)
 {
   int h,a,i,j,hres=50,ares=50;                          //определение переменных и присваивание им необходимых значений
-  float s,v,o,res;
+  float s,v,o,res,sd;
   printf("Yaskovich Dmitry (T01-01c). Lab 7. Variant 21\n\n");              //Информация о программе
   printf("Enter height and side:\n");
   scanf("%d %d",&h,&a);
@@ -25,10 +25,12 @@ int main(void)
 	  }
 	}
   }
-  printf("Square: %f\n",s);
-  printf("Volume: %f\n\n",v);
-  printf("Height: %d\n",hres);
-  printf("Side:   %d\n",ares);
+  sd=cube(v);
+  printf("Square:    %f\n",s);
+  printf("Volume:    %f\n\n",v);
+  printf("Height:    %d\n",hres);
+  printf("Side:      %d\n\n",ares);
+  printf("Cube side: %f\n",sd);
   printf("\nDimini Inc.\n");                                                      //Авторские права
   printf("For progressive future\n");
   printf("(c)2009-2012\n");
@@ -51,7 +53,9 @@ float volume(int height,int side)
  return vol;
 }
 
-float cube(float volum){
-
+float cube(float volum)
+{
+float cubeside;
+cubeside=pow(volum,(1.0/3));
+return cubeside;
 }
-
