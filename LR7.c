@@ -34,7 +34,6 @@ int main(void)
   printf("Volume: %f\n\n",v);
   printf("Height: %d\n",hres);
   printf("Side:   %d\n\n",ares);
-  //printf("Cube side: %f\n",sd);
   printf("Side:   %f\n",sd);
   printf("\nDimini Inc.\n");                                                    //Авторские права
   printf("For progressive future\n");
@@ -47,7 +46,6 @@ int main(void)
 float square(int height,int side)                                               //функция вычисления площади
 {
   float sq;
-  //sq=3*sqrt(3)/2*side*side+3*side*sqrt(height*height+5*side*side/4);
   sq=2*sqrt(3)/4*side*side+3*side*height;
   return sq;
 }
@@ -55,7 +53,6 @@ float square(int height,int side)                                               
 float volume(int height,int side)                                               //функция вычисления объёма
 {
   float vol;
-  //vol=sqrt(3)/2*side*side*height;
   vol=sqrt(3)/4*side*side*height;
   return vol;
 }
